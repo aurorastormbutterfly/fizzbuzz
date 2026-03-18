@@ -16,8 +16,8 @@ export default function RangeControl({ lowerValue, upperValue, step, onRangeChan
   };
 
   return (
-    <div className="sliderContainer">
-      <label htmlFor="range-slider">Select Range:</label>
+    <section className="sliderContainer" aria-labelledby="range-controls-heading">
+      <label htmlFor="range-slider" id="range-controls-heading">Select Range:</label>
       <RangeSlider
         id="range-slider"
         min={1}
@@ -26,6 +26,6 @@ export default function RangeControl({ lowerValue, upperValue, step, onRangeChan
         onInput={handleInput}
         value={[lowerValue, upperValue]}
       />
-    </div>
+    </section>
   );
 }

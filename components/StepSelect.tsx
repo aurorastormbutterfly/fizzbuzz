@@ -7,8 +7,8 @@ const STEP_OPTIONS = [1, 2, 3, 4, 5, 6, 7];
 
 export default function StepSelect({ step, onStepChange }: StepSelectProps) {
   return (
-    <div className="step-container">
-      <label htmlFor="step-select">Select Step:</label>
+    <section className="step-container" aria-labelledby="step-control-heading">
+      <label htmlFor="step-select" id="step-control-heading">Select Step:</label>
       <select
         id="step-select"
         value={step}
@@ -20,6 +20,6 @@ export default function StepSelect({ step, onStepChange }: StepSelectProps) {
           </option>
         ))}
       </select>
-    </div>
+    </section>
   );
 }
