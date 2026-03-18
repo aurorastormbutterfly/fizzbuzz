@@ -1,10 +1,14 @@
 # Interactive FizzBuzz GUI 
 
-[![Deploy Next.js site to Pages](https://github.com/fern-leigh/fizz-buzz/actions/workflows/nextjs.yml/badge.svg)](https://github.com/fern-leigh/fizz-buzz/actions/workflows/nextjs.yml)
+[![Deploy Next.js site to Pages](https://github.com/aurorastormbutterfly/fizzbuzz/actions/workflows/nextjs.yml/badge.svg)](https://github.com/aurorastormbutterfly/fizzbuzz/actions/workflows/nextjs.yml)
 
 A modern, interactive GUI implementation of the classic FizzBuzz kata. 
 
 This project was built as an introductory exercise to transition my existing React knowledge into the **Next.js** ecosystem. It takes a simple algorithmic challenge and elevates it into a fully-fledged web application featuring dynamic inputs, automated testing, and a component-driven architecture.
+
+## Live Demo
+
+The hosted site can be accessed here: [https://aurorastormbutterfly.github.io/fizzbuzz/](https://aurorastormbutterfly.github.io/fizzbuzz/)
 
 ---
 
@@ -15,7 +19,7 @@ This project was built as an introductory exercise to transition my existing Rea
 3. **Robust Testing**: Implement a modern, fast testing suite.
 4. **UI/UX Excellence**: Leverage an industry-standard component library to build a responsive, accessible interface.
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js 15](https://nextjs.org/) & React 19
 - **Language:** TypeScript
@@ -62,7 +66,7 @@ npm run test
 
 ---
 
-## 🏗️ Architecture & Clean Code Practices
+## Architecture & Clean Code Practices
 
 Even for a simple kata like FizzBuzz, I adhered to software engineering best practices to ensure the codebase remains scalable and maintainable:
 
@@ -70,7 +74,7 @@ Even for a simple kata like FizzBuzz, I adhered to software engineering best pra
 - **Single Responsibility Principle (SRP):** Components are kept small and focused on a single task (e.g., slider input vs. results display).
 - **TypeScript:** Strict typing is used throughout to catch errors at compile-time and improve developer experience/documentation.
 
-## 🧪 Testing Strategy
+## Testing Strategy
 
 For this project, I chose **Vitest** over the traditional Jest setup. 
 
@@ -81,7 +85,7 @@ For this project, I chose **Vitest** over the traditional Jest setup.
 
 The utilities (`getRange`, `fizzBuzzify`) are fully covered by unit tests validating both standard mathematical sequences and edge cases (e.g., negative steps, reversed bounds).
 
-## 🎨 UI & Styling Strategy (Sass)
+## UI & Styling Strategy (Sass)
 
 To construct the interface, I chose to implement custom styling using **Sass** rather than relying on a heavy component library.
 
