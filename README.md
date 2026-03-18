@@ -94,7 +94,7 @@ To construct the interface, I chose to implement custom styling using **Sass** r
 - **Deepened CSS/Sass Knowledge:** Hand-crafting the layout using modern CSS layouts (like Flexbox/Grid) reinforced core frontend fundamentals.
 - **Tailored UI:** Provided complete control over the application's design system, allowing for a highly specific, bespoke look and feel without battling framework overrides.
 
-## ⚙️ CI/CD Pipeline
+## CI/CD Pipeline
 
 The project includes a fully functional continuous deployment pipeline utilising **GitHub Actions**. Upon every push to the `main` branch, the workflow automatically:
 1. Checks out the code.
