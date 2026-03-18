@@ -98,9 +98,10 @@ To construct the interface, I chose to implement custom styling using **Sass** r
 
 The project includes a fully functional continuous deployment pipeline utilising **GitHub Actions**. Upon every push to the `main` branch, the workflow automatically:
 1. Checks out the code.
-2. Caches dependencies to speed up build times.
-3. Builds the Next.js static site.
-4. Deploys the artifacts directly to GitHub Pages.
+2. Caches and installs dependencies to speed up subsequent runs.
+3. Runs the full Vitest unit test suite to validate code integrity.
+4. Builds the Next.js application into a static site.
+5. Deploys the build artifacts directly to GitHub Pages if all previous steps succeed.
 
 ---
 
